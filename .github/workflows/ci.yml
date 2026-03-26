@@ -1,5 +1,5 @@
 name: AQI Cast - CI Pipeline
-run-name: Continuous Integration Workflow - {{ github.ref_name }}
+run-name: Continuous Integration Workflow - ${{ github.ref_name || github.head_ref }}
 
 on:
   push:
